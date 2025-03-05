@@ -52,4 +52,4 @@ jobs:
             aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
             aws-region: us-east-1
       - name: Upload funciones.py at bucket
-        run: aws s3 cp funciones.py usa-lambda-test
+        run: aws s3 cp funciones.py s3://usa-lambda-test/
