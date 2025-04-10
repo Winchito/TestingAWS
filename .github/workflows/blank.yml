@@ -51,4 +51,8 @@ jobs:
             aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_ID}}
             aws-region: us-east-1
       - name: Upload funciones.py at bucket
+<<<<<<< HEAD
         run: aws lambda update-function-code --function-name test
+=======
+        run: aws s3 cp funciones.py s3://usa-lambda-test-just-for-testing-practices
+>>>>>>> 61b1375ce6c9ea4a5904564363e37f91bfb3ad36
